@@ -13,7 +13,7 @@
 		6B723029CC35C3CB27F2D93D /* NavigationService+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE36D34E2381D13EE2A37 /* NavigationService+Tabbar.swift */; };
 		91FC409F3BADB87DF0ABE2D7 /* Pods_TestAppRahmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */; };
 		9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */; };
-		ED8B666C2206091300CAE528 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666B2206091300CAE528 /* UIViewController.swift */; };
+		ED8B666C2206091300CAE528 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */; };
 		ED8B6670220610E000CAE528 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666F220610E000CAE528 /* Transport.swift */; };
 		ED8B66722206112A00CAE528 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66712206112A00CAE528 /* Serializer.swift */; };
 		ED8B66752206116900CAE528 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66742206116900CAE528 /* NetworkError.swift */; };
@@ -22,6 +22,9 @@
 		ED8B667D2206132600CAE528 /* BitcoinTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B667C2206132600CAE528 /* BitcoinTime.swift */; };
 		ED8B66802206190400CAE528 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B667F2206190400CAE528 /* BaseRouter.swift */; };
 		ED8B66822206196300CAE528 /* BitcoinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66812206196300CAE528 /* BitcoinRouter.swift */; };
+		ED8B66882206CB7A00CAE528 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED8B66872206CB7A00CAE528 /* Localizable.strings */; };
+		ED8B668A2206CC0000CAE528 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66892206CC0000CAE528 /* String+Localize.swift */; };
+		ED8B668E2206CE3700CAE528 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B668D2206CE3700CAE528 /* Launcher.swift */; };
 		EDFE496322059135005FD029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE496222059135005FD029 /* AppDelegate.swift */; };
 		EDFE496A22059137005FD029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496922059137005FD029 /* Assets.xcassets */; };
 		EDFE496D22059137005FD029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496B22059137005FD029 /* LaunchScreen.storyboard */; };
@@ -42,7 +45,7 @@
 		BD71BC3452D9A09ED9918D00 /* TabbarAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
 		C04FEAE8F418DC929FDF071D /* Pods-TestAppRahmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppRahmet.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet.release.xcconfig"; sourceTree = "<group>"; };
 		D2EC9E0581A8C922552127DA /* TabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
-		ED8B666B2206091300CAE528 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		ED8B666F220610E000CAE528 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		ED8B66712206112A00CAE528 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		ED8B66742206116900CAE528 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		ED8B667C2206132600CAE528 /* BitcoinTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinTime.swift; sourceTree = "<group>"; };
 		ED8B667F2206190400CAE528 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		ED8B66812206196300CAE528 /* BitcoinRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRouter.swift; sourceTree = "<group>"; };
+		ED8B66872206CB7A00CAE528 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ED8B66892206CC0000CAE528 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		ED8B668D2206CE3700CAE528 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
 		EDFE495F22059135005FD029 /* TestAppRahmet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppRahmet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFE496222059135005FD029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFE496922059137005FD029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +179,40 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		ED8B66832206CB2B00CAE528 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED8B66842206CB3A00CAE528 /* Localization */,
+				EDFE496922059137005FD029 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED8B66842206CB3A00CAE528 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				ED8B66872206CB7A00CAE528 /* Localizable.strings */,
+				ED8B66892206CC0000CAE528 /* String+Localize.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		ED8B668B2206CE2500CAE528 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE4975220601E7005FD029 /* NavigationService.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ED8B668C2206CE2C00CAE528 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				ED8B668D2206CE3700CAE528 /* Launcher.swift */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
 		EDFE495622059135005FD029 = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				EDFE496222059135005FD029 /* AppDelegate.swift */,
-				EDFE496922059137005FD029 /* Assets.xcassets */,
 				EDFE496B22059137005FD029 /* LaunchScreen.storyboard */,
 				EDFE496E22059137005FD029 /* Info.plist */,
 				ED8B66792206122100CAE528 /* Models */,
@@ -203,6 +242,7 @@
 				ED8B666E220610CE00CAE528 /* Network */,
 				2ADA1EE6D2D62411889FC500 /* Presentation */,
 				EDFE497C220603BD005FD029 /* Protocols */,
+				ED8B66832206CB2B00CAE528 /* Resources */,
 				EDFE4974220601D6005FD029 /* Services */,
 			);
 			path = TestAppRahmet;
@@ -211,7 +251,8 @@
 		EDFE4974220601D6005FD029 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				EDFE4975220601E7005FD029 /* NavigationService.swift */,
+				ED8B668C2206CE2C00CAE528 /* Launcher */,
+				ED8B668B2206CE2500CAE528 /* Navigation */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -240,7 +281,7 @@
 			children = (
 				EDFE497822060271005FD029 /* UIStoryboard+Extensions.swift */,
 				EDFE49832206044A005FD029 /* UIWindow+Extensions.swift */,
-				ED8B666B2206091300CAE528 /* UIViewController.swift */,
+				ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -325,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFE496D22059137005FD029 /* LaunchScreen.storyboard in Resources */,
+				ED8B66882206CB7A00CAE528 /* Localizable.strings in Resources */,
 				EDFE496A22059137005FD029 /* Assets.xcassets in Resources */,
 				459F3A38ADAC14D4BC878D3F /* Tabbar.storyboard in Resources */,
 			);
@@ -412,7 +454,8 @@
 				EDFE496322059135005FD029 /* AppDelegate.swift in Sources */,
 				EDFE4976220601E7005FD029 /* NavigationService.swift in Sources */,
 				ED8B6678220611FB00CAE528 /* Rx+Alamofire.swift in Sources */,
-				ED8B666C2206091300CAE528 /* UIViewController.swift in Sources */,
+				ED8B668E2206CE3700CAE528 /* Launcher.swift in Sources */,
+				ED8B666C2206091300CAE528 /* UIViewController+Extensions.swift in Sources */,
 				ED8B66722206112A00CAE528 /* Serializer.swift in Sources */,
 				EDFE4986220605C7005FD029 /* StoryboardIdentifierProtocol.swift in Sources */,
 				ED8B667D2206132600CAE528 /* BitcoinTime.swift in Sources */,
@@ -426,6 +469,7 @@
 				EDFE497B22060305005FD029 /* String+Extensions.swift in Sources */,
 				4AD3466AEC8298535FAB608B /* TabbarViewController.swift in Sources */,
 				9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */,
+				ED8B668A2206CC0000CAE528 /* String+Localize.swift in Sources */,
 				EDFE497922060271005FD029 /* UIStoryboard+Extensions.swift in Sources */,
 				ED8B6670220610E000CAE528 /* Transport.swift in Sources */,
 				ED8B66822206196300CAE528 /* BitcoinRouter.swift in Sources */,
@@ -569,6 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR23PPY338;
 				INFOPLIST_FILE = TestAppRahmet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulannurmamatov.TestAppRahmet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,6 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR23PPY338;
 				INFOPLIST_FILE = TestAppRahmet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulannurmamatov.TestAppRahmet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
