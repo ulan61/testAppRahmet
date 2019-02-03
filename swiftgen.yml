@@ -1,0 +1,5 @@
+strings:
+  inputs: Mydom.kg/Resources/Localization/Localizable.strings
+  outputs:
+    templateName: structured-swift4
+    output: Mydom.kg/Resources/Localization/String+Localize.swift

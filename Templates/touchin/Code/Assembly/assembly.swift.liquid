@@ -1,0 +1,9 @@
+
+struct {{ module_info.name }}Assembly {
+
+  func configure(input: {{ module_info.name }}ViewController) {
+      let viewModel = {{ module_info.name }}ViewModel()
+      input.viewModel = viewModel
+  }
+
+}

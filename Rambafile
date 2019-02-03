@@ -1,0 +1,26 @@
+### Headers settings
+company: testAppRahmet
+
+### Xcode project settings
+project_name: TestAppRahmet
+xcodeproj_path: TestAppRahmet.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: TestAppRahmet
+
+# The file path for new modules
+project_file_path: TestAppRahmet/Presentation
+
+# The Xcode group path to new modules
+project_group_path: TestAppRahmet/Presentation
+
+### Dependencies settings section
+podfile_path: Podfile
+
+catalogs:
+- 'https://github.com/ulan61/generamba_templates'
+
+templates:
+- {name: touchin}
+- {name: touchin-tablecell}
