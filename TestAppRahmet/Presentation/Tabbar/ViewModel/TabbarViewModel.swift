@@ -38,12 +38,11 @@ enum TabBarItem: Int {
         case .prices:
             viewController = UIViewController()
         case .transactions:
-            viewController = UIViewController()
+            viewController = NavigationService.createTransactionsViewController().embebbedInNavigationController()
         case .converter:
             viewController = UIViewController()
         }
         viewController.tabBarItem = tabbarItem
-        viewController.navigationItem.title = title
         viewController.view.backgroundColor = .white
         return viewController
     }

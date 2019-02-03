@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transactions View Controller-->
+        <scene sceneID="uwV-8F-5ow">
+            <objects>
+                <viewController storyboardIdentifier="TransactionsViewController" id="b6t-bz-ieq" customClass="TransactionsViewController" customModule="TestAppRahmet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arn-yg-C6P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-t8-GX6">
+                                <rect key="frame" x="94" y="43" width="187" height="30"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q7c-xY-LzZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Куплено"/>
+                                            <segment title="Продано"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="valueChanged:" destination="b6t-bz-ieq" eventType="valueChanged" id="9Gq-bB-drJ"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="8dt-Om-0Bn"/>
+                                    <constraint firstItem="q7c-xY-LzZ" firstAttribute="top" secondItem="NFE-t8-GX6" secondAttribute="top" id="Ihk-Ro-60A"/>
+                                    <constraint firstAttribute="bottom" secondItem="q7c-xY-LzZ" secondAttribute="bottom" id="NKZ-IO-QjB"/>
+                                    <constraint firstAttribute="trailing" secondItem="q7c-xY-LzZ" secondAttribute="trailing" id="bG5-XB-cv5"/>
+                                    <constraint firstAttribute="height" constant="30" id="fv9-ey-x0T"/>
+                                    <constraint firstItem="q7c-xY-LzZ" firstAttribute="leading" secondItem="NFE-t8-GX6" secondAttribute="leading" id="lEe-y5-afS"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-qP-Chw">
+                                <rect key="frame" x="0.0" y="97" width="375" height="570"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-pp-JcZ">
+                                <rect key="frame" x="177.5" y="372" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NFE-t8-GX6" firstAttribute="top" secondItem="6du-Lb-dtI" secondAttribute="top" constant="23" id="83e-6k-Qm7"/>
+                            <constraint firstItem="6du-Lb-dtI" firstAttribute="bottom" secondItem="3dR-qP-Chw" secondAttribute="bottom" id="M8K-Sm-g4v"/>
+                            <constraint firstItem="3dR-qP-Chw" firstAttribute="leading" secondItem="6du-Lb-dtI" secondAttribute="leading" id="PuJ-gM-KEl"/>
+                            <constraint firstItem="Hbj-pp-JcZ" firstAttribute="centerX" secondItem="3dR-qP-Chw" secondAttribute="centerX" id="QRA-bc-P3g"/>
+                            <constraint firstItem="Hbj-pp-JcZ" firstAttribute="centerY" secondItem="3dR-qP-Chw" secondAttribute="centerY" id="TxE-jh-657"/>
+                            <constraint firstItem="NFE-t8-GX6" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="lkA-Vr-N3n"/>
+                            <constraint firstItem="3dR-qP-Chw" firstAttribute="trailing" secondItem="6du-Lb-dtI" secondAttribute="trailing" id="mNq-4A-Qlh"/>
+                            <constraint firstItem="3dR-qP-Chw" firstAttribute="top" secondItem="NFE-t8-GX6" secondAttribute="bottom" constant="24" id="w7e-qR-Wm6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6du-Lb-dtI"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Hbj-pp-JcZ" id="fK4-rP-cwD"/>
+                        <outlet property="segmentedControl" destination="q7c-xY-LzZ" id="0Yv-zt-FcR"/>
+                        <outlet property="sementedControlBackground" destination="NFE-t8-GX6" id="RNs-ak-hfi"/>
+                        <outlet property="tableView" destination="3dR-qP-Chw" id="cSa-Tf-F63"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dml-eC-9W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="-180.35982008995504"/>
+        </scene>
+    </scenes>
+</document>

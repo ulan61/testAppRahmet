@@ -5,6 +5,7 @@ extension UIStoryboard {
     enum Storyboard: String {
         
         case tabbar
+        case transactions
         
         var filename: String {
             return rawValue.firstUppercased

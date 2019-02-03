@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309E89505FFEB81882EC79DC /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */; };
 		459F3A38ADAC14D4BC878D3F /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703820AA48BFBC3952BAF27F /* Tabbar.storyboard */; };
 		4AD3466AEC8298535FAB608B /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EC9E0581A8C922552127DA /* TabbarViewController.swift */; };
+		4EA5055E8BEDD3EE0B915EF5 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25553941C4317783B64BB88E /* TransactionsViewModel.swift */; };
 		69109B7ED7F9C4C39833D1E2 /* TabbarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71BC3452D9A09ED9918D00 /* TabbarAssembly.swift */; };
 		6B723029CC35C3CB27F2D93D /* NavigationService+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE36D34E2381D13EE2A37 /* NavigationService+Tabbar.swift */; };
+		7A64CA028AE2C38B8B6DB85F /* NavigationService+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8438D9CAA961DB03B99BC7 /* NavigationService+Transactions.swift */; };
 		91FC409F3BADB87DF0ABE2D7 /* Pods_TestAppRahmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */; };
 		9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */; };
+		A96A36F5581EBB922525A501 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043876E4DBA29BDAA1B0378A /* TransactionCell.xib */; };
+		D7D9C718F37EDDBAD502AC96 /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8195FEAC3CAC5489615E8 /* TransactionCellViewModel.swift */; };
+		E57A65E01C28CAD1DDADDE9D /* TransactionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98A72FCBA28BDED6007609 /* TransactionsAssembly.swift */; };
 		ED8B666C2206091300CAE528 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */; };
 		ED8B6670220610E000CAE528 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666F220610E000CAE528 /* Transport.swift */; };
 		ED8B66722206112A00CAE528 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66712206112A00CAE528 /* Serializer.swift */; };
@@ -25,6 +31,12 @@
 		ED8B66882206CB7A00CAE528 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED8B66872206CB7A00CAE528 /* Localizable.strings */; };
 		ED8B668A2206CC0000CAE528 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66892206CC0000CAE528 /* String+Localize.swift */; };
 		ED8B668E2206CE3700CAE528 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B668D2206CE3700CAE528 /* Launcher.swift */; };
+		ED8B66912206D18500CAE528 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66902206D18500CAE528 /* UINavigationController+Extensions.swift */; };
+		ED8B66942206DDA700CAE528 /* TransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66932206DDA700CAE528 /* TransactionRouter.swift */; };
+		ED8B66972206DE4A00CAE528 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66962206DE4A00CAE528 /* TransactionService.swift */; };
+		ED8B66992206DE8D00CAE528 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66982206DE8D00CAE528 /* Transaction.swift */; };
+		ED8B669B2206E3DB00CAE528 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */; };
+		ED8B669D2206E83900CAE528 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */; };
 		EDFE496322059135005FD029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE496222059135005FD029 /* AppDelegate.swift */; };
 		EDFE496A22059137005FD029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496922059137005FD029 /* Assets.xcassets */; };
 		EDFE496D22059137005FD029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496B22059137005FD029 /* LaunchScreen.storyboard */; };
@@ -34,15 +46,25 @@
 		EDFE498022060400005FD029 /* ConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE497F22060400005FD029 /* ConfigurableController.swift */; };
 		EDFE49842206044A005FD029 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE49832206044A005FD029 /* UIWindow+Extensions.swift */; };
 		EDFE4986220605C7005FD029 /* StoryboardIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE4985220605C7005FD029 /* StoryboardIdentifierProtocol.swift */; };
+		F8D302E46B18F0170BCA370F /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323A86FBB3C2CAF3CEE20D3 /* TransactionCell.swift */; };
+		F96E9973D82C09F7473AF89E /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4768100C9389B2ACBF4DC06 /* TransactionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043876E4DBA29BDAA1B0378A /* TransactionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		1D98A72FCBA28BDED6007609 /* TransactionsAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsAssembly.swift; sourceTree = "<group>"; };
+		25553941C4317783B64BB88E /* TransactionsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		2E8438D9CAA961DB03B99BC7 /* NavigationService+Transactions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Transactions.swift"; sourceTree = "<group>"; };
+		3323A86FBB3C2CAF3CEE20D3 /* TransactionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		480FE36D34E2381D13EE2A37 /* NavigationService+Tabbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Tabbar.swift"; sourceTree = "<group>"; };
+		62F8195FEAC3CAC5489615E8 /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
 		703820AA48BFBC3952BAF27F /* Tabbar.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		76050685E98E8588084B705F /* Pods-TestAppRahmet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppRahmet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet.debug.xcconfig"; sourceTree = "<group>"; };
 		A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAppRahmet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		B4768100C9389B2ACBF4DC06 /* TransactionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		BD71BC3452D9A09ED9918D00 /* TabbarAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
+		BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		C04FEAE8F418DC929FDF071D /* Pods-TestAppRahmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppRahmet.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet.release.xcconfig"; sourceTree = "<group>"; };
 		D2EC9E0581A8C922552127DA /* TabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -57,6 +79,12 @@
 		ED8B66872206CB7A00CAE528 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		ED8B66892206CC0000CAE528 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 		ED8B668D2206CE3700CAE528 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
+		ED8B66902206D18500CAE528 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		ED8B66932206DDA700CAE528 /* TransactionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRouter.swift; sourceTree = "<group>"; };
+		ED8B66962206DE4A00CAE528 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		ED8B66982206DE8D00CAE528 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		EDFE495F22059135005FD029 /* TestAppRahmet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppRahmet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFE496222059135005FD029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFE496922059137005FD029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1C94C1ACBC54735204B3C547 /* Tabbar */,
+				6DDBFF0AB6F9F4E319CD6DAA /* Transactions */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -126,12 +155,58 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		4E40E1C15225A37CAC131613 /* TransactionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3323A86FBB3C2CAF3CEE20D3 /* TransactionCell.swift */,
+				62F8195FEAC3CAC5489615E8 /* TransactionCellViewModel.swift */,
+				043876E4DBA29BDAA1B0378A /* TransactionCell.xib */,
+			);
+			path = TransactionCell;
+			sourceTree = "<group>";
+		};
+		6DDBFF0AB6F9F4E319CD6DAA /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				9556CC8680CA8A4DCAFB1EC4 /* Assembly */,
+				8862EC11C20C877717FBFCD0 /* View */,
+				C57876AFAE3326070642509F /* ViewModel */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		8862EC11C20C877717FBFCD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4768100C9389B2ACBF4DC06 /* TransactionsViewController.swift */,
+				BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9556CC8680CA8A4DCAFB1EC4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D98A72FCBA28BDED6007609 /* TransactionsAssembly.swift */,
+				2E8438D9CAA961DB03B99BC7 /* NavigationService+Transactions.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		B601ADC3F105CEED49D2F8B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57876AFAE3326070642509F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				25553941C4317783B64BB88E /* TransactionsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		ED8B666E220610CE00CAE528 /* Network */ = {
@@ -166,6 +241,7 @@
 			children = (
 				ED8B667A220612B200CAE528 /* BitcoinHistory.swift */,
 				ED8B667C2206132600CAE528 /* BitcoinTime.swift */,
+				ED8B66982206DE8D00CAE528 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +251,7 @@
 			children = (
 				ED8B667F2206190400CAE528 /* BaseRouter.swift */,
 				ED8B66812206196300CAE528 /* BitcoinRouter.swift */,
+				ED8B66932206DDA700CAE528 /* TransactionRouter.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -213,6 +290,22 @@
 			path = Launcher;
 			sourceTree = "<group>";
 		};
+		ED8B66922206D8D600CAE528 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E40E1C15225A37CAC131613 /* TransactionCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED8B66952206DE3B00CAE528 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				ED8B66962206DE4A00CAE528 /* TransactionService.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 		EDFE495622059135005FD029 = {
 			isa = PBXGroup;
 			children = (
@@ -235,8 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFE496222059135005FD029 /* AppDelegate.swift */,
-				EDFE496B22059137005FD029 /* LaunchScreen.storyboard */,
-				EDFE496E22059137005FD029 /* Info.plist */,
+				ED8B66922206D8D600CAE528 /* Cells */,
 				ED8B66792206122100CAE528 /* Models */,
 				EDFE497722060210005FD029 /* Extensions */,
 				ED8B666E220610CE00CAE528 /* Network */,
@@ -244,6 +336,8 @@
 				EDFE497C220603BD005FD029 /* Protocols */,
 				ED8B66832206CB2B00CAE528 /* Resources */,
 				EDFE4974220601D6005FD029 /* Services */,
+				EDFE496B22059137005FD029 /* LaunchScreen.storyboard */,
+				EDFE496E22059137005FD029 /* Info.plist */,
 			);
 			path = TestAppRahmet;
 			sourceTree = "<group>";
@@ -251,6 +345,7 @@
 		EDFE4974220601D6005FD029 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ED8B66952206DE3B00CAE528 /* Transaction */,
 				ED8B668C2206CE2C00CAE528 /* Launcher */,
 				ED8B668B2206CE2500CAE528 /* Navigation */,
 			);
@@ -282,6 +377,8 @@
 				EDFE497822060271005FD029 /* UIStoryboard+Extensions.swift */,
 				EDFE49832206044A005FD029 /* UIWindow+Extensions.swift */,
 				ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */,
+				ED8B66902206D18500CAE528 /* UINavigationController+Extensions.swift */,
+				ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -290,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFE497A22060305005FD029 /* String+Extensions.swift */,
+				ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -369,6 +467,8 @@
 				ED8B66882206CB7A00CAE528 /* Localizable.strings in Resources */,
 				EDFE496A22059137005FD029 /* Assets.xcassets in Resources */,
 				459F3A38ADAC14D4BC878D3F /* Tabbar.storyboard in Resources */,
+				309E89505FFEB81882EC79DC /* Transactions.storyboard in Resources */,
+				A96A36F5581EBB922525A501 /* TransactionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +498,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -411,8 +509,6 @@
 				"${BUILT_PRODUCTS_DIR}/TableKit/TableKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
@@ -432,11 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -462,17 +554,29 @@
 				ED8B667B220612B200CAE528 /* BitcoinHistory.swift in Sources */,
 				EDFE49842206044A005FD029 /* UIWindow+Extensions.swift in Sources */,
 				69109B7ED7F9C4C39833D1E2 /* TabbarAssembly.swift in Sources */,
+				ED8B669D2206E83900CAE528 /* UITableView+Extensions.swift in Sources */,
 				6B723029CC35C3CB27F2D93D /* NavigationService+Tabbar.swift in Sources */,
 				EDFE498022060400005FD029 /* ConfigurableController.swift in Sources */,
+				ED8B66942206DDA700CAE528 /* TransactionRouter.swift in Sources */,
 				ED8B66752206116900CAE528 /* NetworkError.swift in Sources */,
 				ED8B66802206190400CAE528 /* BaseRouter.swift in Sources */,
 				EDFE497B22060305005FD029 /* String+Extensions.swift in Sources */,
 				4AD3466AEC8298535FAB608B /* TabbarViewController.swift in Sources */,
+				ED8B66992206DE8D00CAE528 /* Transaction.swift in Sources */,
 				9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */,
 				ED8B668A2206CC0000CAE528 /* String+Localize.swift in Sources */,
 				EDFE497922060271005FD029 /* UIStoryboard+Extensions.swift in Sources */,
+				ED8B66972206DE4A00CAE528 /* TransactionService.swift in Sources */,
+				ED8B669B2206E3DB00CAE528 /* Date+Extensions.swift in Sources */,
 				ED8B6670220610E000CAE528 /* Transport.swift in Sources */,
 				ED8B66822206196300CAE528 /* BitcoinRouter.swift in Sources */,
+				E57A65E01C28CAD1DDADDE9D /* TransactionsAssembly.swift in Sources */,
+				7A64CA028AE2C38B8B6DB85F /* NavigationService+Transactions.swift in Sources */,
+				F96E9973D82C09F7473AF89E /* TransactionsViewController.swift in Sources */,
+				ED8B66912206D18500CAE528 /* UINavigationController+Extensions.swift in Sources */,
+				4EA5055E8BEDD3EE0B915EF5 /* TransactionsViewModel.swift in Sources */,
+				F8D302E46B18F0170BCA370F /* TransactionCell.swift in Sources */,
+				D7D9C718F37EDDBAD502AC96 /* TransactionCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
