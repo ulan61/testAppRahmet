@@ -6,8 +6,8 @@ struct BitcoinTime: ImmutableMappable {
     let updatedISO: Date
     
     init(map: Map) throws {
-        updated = try map.value("updated")
-        updatedISO = try map.value("updatedISO")
+        updated = try map.value("updated", using: DateTransform())
+        updatedISO = try map.value("updatedISO", using: DateTransform())
     }
     
 }
