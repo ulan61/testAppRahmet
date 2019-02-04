@@ -29,7 +29,7 @@ class TransactionViewController: UIViewController {
         timeLabel.text = viewModel.transaction.date.timeIn24HourFormat()
         dateLabel.text = viewModel.transaction.date.toString()
         if let amount = Double(viewModel.transaction.amount) {
-            sumLabel.text = "$ \((Double(amount) * price.rateFloat).rounded(to: 2))"
+            sumLabel.text = "$ \((amount * price.rateFloat).rounded(to: 2))"
         }
         rateLabel.text = "$ " + price.rate
     }
