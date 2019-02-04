@@ -53,7 +53,6 @@ class PricesViewController: UIViewController {
         
         let set1 = LineChartDataSet(values: values, label: "")
 
-    
         let data = LineChartData(dataSets: [set1])
        
         configureLineChartViewAppearance()

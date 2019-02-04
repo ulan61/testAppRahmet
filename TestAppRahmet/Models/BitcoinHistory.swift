@@ -1,19 +1,15 @@
 import ObjectMapper
 
-struct BitcoinHistory: Mappable {
+struct BitcoinHistory: ImmutableMappable {
     
-    var bpi = [String: Double]()
-    var disclaimer = ""
-    var time = BitcoinTime(JSONString: "")
+    let bpi: [String: Double]
+    let disclaimer: String
+    let time: BitcoinTime
     
-    init?(map: Map) {
-        
-    }
-    
-    mutating func mapping(map: Map) {
-        bpi <- map["bpi"]
-        disclaimer <- map["disclaimer"]
-        time <- map["time"]
+    init(map: Map) throws {
+        bpi = try map.value("bpi")
+        disclaimer = try map.value("disclaimer")
+        time = try map.value("time")
     }
     
 }

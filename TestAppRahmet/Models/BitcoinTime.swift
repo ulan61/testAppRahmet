@@ -1,17 +1,13 @@
 import ObjectMapper
 
-struct BitcoinTime: Mappable {
+struct BitcoinTime: ImmutableMappable {
+
+    let updated: Date
+    let updatedISO: Date
     
-    var updated: Date = Date()
-    var updatedISO: Date = Date()
-    
-    init?(map: Map) {
-        
-    }
-    
-    mutating func mapping(map: Map) {
-        updated <- map["updated"]
-        updatedISO <- map["updatedISO"]
+    init(map: Map) throws {
+        updated = try map.value("updated")
+        updatedISO = try map.value("updatedISO")
     }
     
 }
