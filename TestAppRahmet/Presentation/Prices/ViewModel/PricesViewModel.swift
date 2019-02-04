@@ -34,7 +34,7 @@ class PricesViewModel {
     private func getDates(between startDate: Date, and endDate: Date) -> [Date] {
         var dates = [Date]()
         var dateCounter = startDate
-        while dateCounter <= endDate {
+        while dateCounter < endDate {
             if let date = Calendar.current.date(byAdding: .day, value: 1, to: dateCounter) {
                 dates.append(date)
                 dateCounter = date
@@ -48,9 +48,9 @@ class PricesViewModel {
         case .week:
             return Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date()
         case .month:
-            return Calendar.current.date(byAdding: .day, value: -31, to: Date()) ?? Date()
+            return Calendar.current.date(byAdding: .day, value: -30, to: Date()) ?? Date()
         case .year:
-            return Calendar.current.date(byAdding: .day, value: -365, to: Date()) ?? Date()
+            return Calendar.current.date(byAdding: .day, value: -360, to: Date()) ?? Date()
         }
     }
     
@@ -94,7 +94,7 @@ class PricesViewModel {
         var counter = 0
         for key in keys {
             sum += bpi[key] ?? 0.0
-            if counter % (period == .month ? 7 : 30) == 0 {
+            if counter % (period == .month ? 7 : 30) == 0 && counter != 0 {
                 values.append(sum / (period == .month ? 7 : 30))
                 sum = 0
             }
