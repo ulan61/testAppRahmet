@@ -23,12 +23,14 @@ extension BaseRouter {
         let url = try baseApiUrl.asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         urlRequest.httpMethod = method.rawValue
-        
+
         if method == .post {
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: self.parameters)
         } else {
             urlRequest = try URLEncoding.default.encode(urlRequest, with: self.parameters)
         }
+        
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         return urlRequest
     }

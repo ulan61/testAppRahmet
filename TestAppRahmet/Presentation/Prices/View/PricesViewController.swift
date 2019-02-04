@@ -52,7 +52,7 @@ class PricesViewController: UIViewController {
         }
         
         let set1 = LineChartDataSet(values: values, label: "")
-        set1.mode = .linear
+
     
         let data = LineChartData(dataSets: [set1])
        
