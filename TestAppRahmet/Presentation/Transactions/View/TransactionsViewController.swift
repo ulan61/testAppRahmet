@@ -16,7 +16,13 @@ class TransactionsViewController: UIViewController {
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     
+    var refreshControl: UIRefreshControl?
+    
     private lazy var transactionSection = TableSection(rows: [])
+    
+    private lazy var showTransactionAction = TableRowAction<TransactionCell>(.click) { [weak self] options in
+        self?.showTransaction(at: options.indexPath.row)
+    }
 
     @IBAction private func valueChanged(_ sender: UISegmentedControl) {
         clearTransactionSection()
@@ -30,10 +36,7 @@ class TransactionsViewController: UIViewController {
     }
     
     private func configureSegmentsBackgroundAppearance() {
-        sementedControlBackground.clipsToBounds = true
-        sementedControlBackground.layer.cornerRadius = 15
-        sementedControlBackground.layer.borderWidth = 1
-        sementedControlBackground.layer.borderColor = #colorLiteral(red: 0.4039215686, green: 0.2274509804, blue: 0.7176470588, alpha: 1)
+        segmentedControl.change(cornerRadius: 15)
     }
     
     private func initialTableView() {
@@ -42,37 +45,44 @@ class TransactionsViewController: UIViewController {
     
     private func populateTableView() {
         let transactionsViewModels = viewModel.getTransactionViewModels(by: "\(segmentedControl.selectedSegmentIndex)")
-        let rows = transactionsViewModels.map { TableRow<TransactionCell>(item: $0) }
+        let rows = transactionsViewModels.map {
+            TableRow<TransactionCell>(item: $0,
+                                      actions: [showTransactionAction])
+            
+        }
         transactionSection.append(rows: rows)
         tableDirector.reload()
     }
     
-    private func getTransactions() {
-        activityIndicator.startAnimating()
+    private func getTransactions(isReloading: Bool = false) {
+        if !isReloading {
+            activityIndicator.startAnimating()
+        }
         viewModel.getTransactions().subscribe(onNext: { [weak self] transactions in
             self?.viewModel.transactions = transactions
-        }, onError: { error in
-            print(error)
+        }, onError: { [weak self] error in
+            self?.showAlert(message: error.localizedDescription) { _ in
+                self?.endLoading()
+            }
         }, onCompleted: { [weak self] in
             self?.populateTableView()
-            self?.activityIndicator.stopAnimating()
+            self?.endLoading()
         }).disposed(by: disposeBag)
     }
     
-    private func configureRefreshBarButton() {
-        let barButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadData))
-        barButtonItem.tintColor = #colorLiteral(red: 0.4039215686, green: 0.2274509804, blue: 0.7176470588, alpha: 1)
-        navigationItem.rightBarButtonItem = barButtonItem
-    }
-
-    @objc private func reloadData() {
-        clearTransactionSection()
-        getTransactions()
+    private func endLoading() {
+        activityIndicator.stopAnimating()
+        refreshControl?.endRefreshing()
     }
     
     private func clearTransactionSection() {
         transactionSection.clear()
         tableDirector.reload()
+    }
+    
+    private func showTransaction(at index: Int) {
+        let transaction = NavigationService.createTransactionViewController(with: viewModel.transactions[index])
+        navigationController?.pushViewController(transaction, animated: true)
     }
     
 }
@@ -85,20 +95,34 @@ extension TransactionsViewController: ConfigurableController {
 
     func setAppearance() {
         navigationController?.changeNavBarColor(to: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), shouldShowShadow: true)
+        navigationController?.changeTintColor(to: #colorLiteral(red: 0.4039215686, green: 0.2274509804, blue: 0.7176470588, alpha: 1))
         configureSegmentsBackgroundAppearance()
         tableView.hideUnusedCells()
     }
 
     func addViews() {
         initialTableView()
+        initialRefreshControl()
     }
 
     func configureBarButtons() {
-        configureRefreshBarButton()
+
     }
 
     func localize() {
         navigationItem.title = L10n.transactions
     }
 
+}
+
+extension TransactionsViewController: RefreshableView {
+    
+    var scrollView: UIScrollView {
+        return tableView
+    }
+    
+    func refresh() {
+        getTransactions(isReloading: true)
+    }
+    
 }

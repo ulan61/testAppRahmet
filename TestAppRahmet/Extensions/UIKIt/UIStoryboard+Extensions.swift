@@ -6,6 +6,9 @@ extension UIStoryboard {
         
         case tabbar
         case transactions
+        case transaction
+        case converter
+        case prices
         
         var filename: String {
             return rawValue.firstUppercased

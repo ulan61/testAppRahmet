@@ -16,18 +16,4 @@ struct BitcoinHistory: Mappable {
         time <- map["time"]
     }
     
-    private func getDates(between startDate: Date, and endDate: Date) -> [String] {
-        var dates = [String]()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY-MM-DD"
-        var dateCounter = startDate
-        while startDate <= endDate {
-            if let date = Calendar.current.date(byAdding: .day, value: 1, to: dateCounter) {
-                dates.append(formatter.string(from: date))
-                dateCounter = date
-            }
-        }
-        return dates
-    }
-    
 }

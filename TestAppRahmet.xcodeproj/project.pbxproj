@@ -7,17 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6299CCE657C36125FE6F68 /* ConverterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE139F8A2C089E58B7E72E78 /* ConverterAssembly.swift */; };
 		309E89505FFEB81882EC79DC /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */; };
+		4136264957BE7149AA1CFE9A /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E615943514A441A27D1E53 /* ConverterViewModel.swift */; };
 		459F3A38ADAC14D4BC878D3F /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703820AA48BFBC3952BAF27F /* Tabbar.storyboard */; };
 		4AD3466AEC8298535FAB608B /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EC9E0581A8C922552127DA /* TabbarViewController.swift */; };
+		4C38A0C61996634EF00BC300 /* NavigationService+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC93DE3D087EB85B250C1DBA /* NavigationService+Transaction.swift */; };
 		4EA5055E8BEDD3EE0B915EF5 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25553941C4317783B64BB88E /* TransactionsViewModel.swift */; };
 		69109B7ED7F9C4C39833D1E2 /* TabbarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71BC3452D9A09ED9918D00 /* TabbarAssembly.swift */; };
 		6B723029CC35C3CB27F2D93D /* NavigationService+Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE36D34E2381D13EE2A37 /* NavigationService+Tabbar.swift */; };
+		751EB2B115A6F9E5E5C93F20 /* PricesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811FB1AEE250AD26D68641EB /* PricesViewController.swift */; };
+		79AE8E87BF5497E15DD00266 /* NavigationService+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08740D651A2FC608032714F1 /* NavigationService+Converter.swift */; };
 		7A64CA028AE2C38B8B6DB85F /* NavigationService+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8438D9CAA961DB03B99BC7 /* NavigationService+Transactions.swift */; };
+		7EED7B7C3D41D93BFC87147D /* TransactionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB7E7BEFA4BD28A667A622 /* TransactionAssembly.swift */; };
+		80EC0A49116169DA2CA045C2 /* NavigationService+Prices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207C928B9A4713C60C103498 /* NavigationService+Prices.swift */; };
+		8652CCE088F1D1E856600701 /* PricesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD954CCAE004EC11B007C33 /* PricesAssembly.swift */; };
+		8DFA1D50C48E46DC9ED66790 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C41D009E9ED629639508C7 /* ConverterViewController.swift */; };
 		91FC409F3BADB87DF0ABE2D7 /* Pods_TestAppRahmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */; };
 		9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */; };
+		9D95E865DE9C492386714BCA /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CB5B47AA8F89808C04CB9 /* TransactionViewController.swift */; };
 		A96A36F5581EBB922525A501 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043876E4DBA29BDAA1B0378A /* TransactionCell.xib */; };
+		B226DDD66972FD8FDF38A92C /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6691C8EBA3EE0E406AD5A890 /* TransactionViewModel.swift */; };
+		CB26946AB2809696760604C5 /* PricesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58720DCE644EA0A1BB3F3C8D /* PricesViewModel.swift */; };
+		D38F405052A019E04961315C /* Converter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80FDB6A46B939C18CC52CD1 /* Converter.storyboard */; };
+		D45AFF9BC8E203CDF27294D7 /* Prices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267BD20131B4372F08245F6E /* Prices.storyboard */; };
 		D7D9C718F37EDDBAD502AC96 /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8195FEAC3CAC5489615E8 /* TransactionCellViewModel.swift */; };
+		DB0C92C46616A6CDB855FFE0 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1989CC0CD894ADE3ED7AE0F2 /* Transaction.storyboard */; };
 		E57A65E01C28CAD1DDADDE9D /* TransactionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D98A72FCBA28BDED6007609 /* TransactionsAssembly.swift */; };
 		ED8B666C2206091300CAE528 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */; };
 		ED8B6670220610E000CAE528 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B666F220610E000CAE528 /* Transport.swift */; };
@@ -37,6 +52,11 @@
 		ED8B66992206DE8D00CAE528 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66982206DE8D00CAE528 /* Transaction.swift */; };
 		ED8B669B2206E3DB00CAE528 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */; };
 		ED8B669D2206E83900CAE528 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */; };
+		ED8B669F2207243000CAE528 /* RefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B669E2207243000CAE528 /* RefreshableView.swift */; };
+		ED8B66A222072D1600CAE528 /* BitcoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66A122072D1600CAE528 /* BitcoinService.swift */; };
+		ED8B66A422072D4B00CAE528 /* BitcoinPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66A322072D4B00CAE528 /* BitcoinPrice.swift */; };
+		ED8B66A622073AA200CAE528 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66A522073AA200CAE528 /* Double+Extensions.swift */; };
+		ED8B66A822073E8700CAE528 /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B66A722073E8700CAE528 /* UISegmentedControl.swift */; };
 		EDFE496322059135005FD029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE496222059135005FD029 /* AppDelegate.swift */; };
 		EDFE496A22059137005FD029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496922059137005FD029 /* Assets.xcassets */; };
 		EDFE496D22059137005FD029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFE496B22059137005FD029 /* LaunchScreen.storyboard */; };
@@ -52,20 +72,32 @@
 
 /* Begin PBXFileReference section */
 		043876E4DBA29BDAA1B0378A /* TransactionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		08740D651A2FC608032714F1 /* NavigationService+Converter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Converter.swift"; sourceTree = "<group>"; };
+		0DD954CCAE004EC11B007C33 /* PricesAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PricesAssembly.swift; sourceTree = "<group>"; };
+		1989CC0CD894ADE3ED7AE0F2 /* Transaction.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 		1D98A72FCBA28BDED6007609 /* TransactionsAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsAssembly.swift; sourceTree = "<group>"; };
+		207C928B9A4713C60C103498 /* NavigationService+Prices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Prices.swift"; sourceTree = "<group>"; };
 		25553941C4317783B64BB88E /* TransactionsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		267BD20131B4372F08245F6E /* Prices.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; path = Prices.storyboard; sourceTree = "<group>"; };
 		2E8438D9CAA961DB03B99BC7 /* NavigationService+Transactions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Transactions.swift"; sourceTree = "<group>"; };
 		3323A86FBB3C2CAF3CEE20D3 /* TransactionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		480FE36D34E2381D13EE2A37 /* NavigationService+Tabbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Tabbar.swift"; sourceTree = "<group>"; };
+		58720DCE644EA0A1BB3F3C8D /* PricesViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PricesViewModel.swift; sourceTree = "<group>"; };
 		62F8195FEAC3CAC5489615E8 /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
+		6691C8EBA3EE0E406AD5A890 /* TransactionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		703820AA48BFBC3952BAF27F /* Tabbar.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		76050685E98E8588084B705F /* Pods-TestAppRahmet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppRahmet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet.debug.xcconfig"; sourceTree = "<group>"; };
+		811FB1AEE250AD26D68641EB /* PricesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PricesViewController.swift; sourceTree = "<group>"; };
+		877CB5B47AA8F89808C04CB9 /* TransactionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		A2611E443AB6F3AF4A917699 /* Pods_TestAppRahmet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAppRahmet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		A6C41D009E9ED629639508C7 /* ConverterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		B4768100C9389B2ACBF4DC06 /* TransactionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		B6E615943514A441A27D1E53 /* ConverterViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
 		BD71BC3452D9A09ED9918D00 /* TabbarAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
 		BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
 		C04FEAE8F418DC929FDF071D /* Pods-TestAppRahmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppRahmet.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppRahmet/Pods-TestAppRahmet.release.xcconfig"; sourceTree = "<group>"; };
+		C2EB7E7BEFA4BD28A667A622 /* TransactionAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionAssembly.swift; sourceTree = "<group>"; };
 		D2EC9E0581A8C922552127DA /* TabbarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		ED8B666F220610E000CAE528 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
@@ -85,6 +117,11 @@
 		ED8B66982206DE8D00CAE528 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		ED8B669E2207243000CAE528 /* RefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableView.swift; sourceTree = "<group>"; };
+		ED8B66A122072D1600CAE528 /* BitcoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinService.swift; sourceTree = "<group>"; };
+		ED8B66A322072D4B00CAE528 /* BitcoinPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPrice.swift; sourceTree = "<group>"; };
+		ED8B66A522073AA200CAE528 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		ED8B66A722073E8700CAE528 /* UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
 		EDFE495F22059135005FD029 /* TestAppRahmet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppRahmet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFE496222059135005FD029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFE496922059137005FD029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +133,9 @@
 		EDFE497F22060400005FD029 /* ConfigurableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableController.swift; sourceTree = "<group>"; };
 		EDFE49832206044A005FD029 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		EDFE4985220605C7005FD029 /* StoryboardIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifierProtocol.swift; sourceTree = "<group>"; };
+		EE139F8A2C089E58B7E72E78 /* ConverterAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConverterAssembly.swift; sourceTree = "<group>"; };
+		F80FDB6A46B939C18CC52CD1 /* Converter.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Converter.storyboard; sourceTree = "<group>"; };
+		FC93DE3D087EB85B250C1DBA /* NavigationService+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationService+Transaction.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126246270B44C3B3BEB5FEF6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6691C8EBA3EE0E406AD5A890 /* TransactionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1C94C1ACBC54735204B3C547 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,13 +168,35 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		258E28F905E0CBBBEFE647B8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EE139F8A2C089E58B7E72E78 /* ConverterAssembly.swift */,
+				08740D651A2FC608032714F1 /* NavigationService+Converter.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		2ADA1EE6D2D62411889FC500 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				1C94C1ACBC54735204B3C547 /* Tabbar */,
 				6DDBFF0AB6F9F4E319CD6DAA /* Transactions */,
+				2D29E651CF97876F283B9EEC /* Transaction */,
+				8AA754E0B8FA6084B1012743 /* Converter */,
+				656C582747CD85AA444CE62C /* Prices */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2D29E651CF97876F283B9EEC /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				92ED0A2BACD02761A0358B38 /* Assembly */,
+				86CDA9585D575AE2A73E6A8D /* View */,
+				126246270B44C3B3BEB5FEF6 /* ViewModel */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		433A219EA25F2CCAF5D5E5F5 /* Pods */ = {
@@ -144,6 +214,16 @@
 				A5F7DBD2E140502B558D1F50 /* TabbarViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44CD41F3B586AD374E07C337 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0DD954CCAE004EC11B007C33 /* PricesAssembly.swift */,
+				207C928B9A4713C60C103498 /* NavigationService+Prices.swift */,
+			);
+			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		4B32125736EBA1D40EB5C018 /* Assembly */ = {
@@ -165,6 +245,25 @@
 			path = TransactionCell;
 			sourceTree = "<group>";
 		};
+		5E33B856E2AF6B84387D47A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6E615943514A441A27D1E53 /* ConverterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		656C582747CD85AA444CE62C /* Prices */ = {
+			isa = PBXGroup;
+			children = (
+				44CD41F3B586AD374E07C337 /* Assembly */,
+				D4F94E6C84DF989B92F21C1E /* View */,
+				FB630021E1D4CD705E0646A7 /* ViewModel */,
+			);
+			name = Prices;
+			path = Prices;
+			sourceTree = "<group>";
+		};
 		6DDBFF0AB6F9F4E319CD6DAA /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +274,15 @@
 			path = Transactions;
 			sourceTree = "<group>";
 		};
+		86CDA9585D575AE2A73E6A8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				877CB5B47AA8F89808C04CB9 /* TransactionViewController.swift */,
+				1989CC0CD894ADE3ED7AE0F2 /* Transaction.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8862EC11C20C877717FBFCD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +290,25 @@
 				BFFB5284BFD3C9F4DF64624F /* Transactions.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8AA754E0B8FA6084B1012743 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				258E28F905E0CBBBEFE647B8 /* Assembly */,
+				E8D63054BFAB28ECFB4E3F33 /* View */,
+				5E33B856E2AF6B84387D47A4 /* ViewModel */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		92ED0A2BACD02761A0358B38 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C2EB7E7BEFA4BD28A667A622 /* TransactionAssembly.swift */,
+				FC93DE3D087EB85B250C1DBA /* NavigationService+Transaction.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		9556CC8680CA8A4DCAFB1EC4 /* Assembly */ = {
@@ -207,6 +334,25 @@
 				25553941C4317783B64BB88E /* TransactionsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D4F94E6C84DF989B92F21C1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				811FB1AEE250AD26D68641EB /* PricesViewController.swift */,
+				267BD20131B4372F08245F6E /* Prices.storyboard */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8D63054BFAB28ECFB4E3F33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C41D009E9ED629639508C7 /* ConverterViewController.swift */,
+				F80FDB6A46B939C18CC52CD1 /* Converter.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED8B666E220610CE00CAE528 /* Network */ = {
@@ -242,6 +388,7 @@
 				ED8B667A220612B200CAE528 /* BitcoinHistory.swift */,
 				ED8B667C2206132600CAE528 /* BitcoinTime.swift */,
 				ED8B66982206DE8D00CAE528 /* Transaction.swift */,
+				ED8B66A322072D4B00CAE528 /* BitcoinPrice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +453,14 @@
 			path = Transaction;
 			sourceTree = "<group>";
 		};
+		ED8B66A022072D0400CAE528 /* BitcoinService */ = {
+			isa = PBXGroup;
+			children = (
+				ED8B66A122072D1600CAE528 /* BitcoinService.swift */,
+			);
+			path = BitcoinService;
+			sourceTree = "<group>";
+		};
 		EDFE495622059135005FD029 = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +500,7 @@
 		EDFE4974220601D6005FD029 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ED8B66A022072D0400CAE528 /* BitcoinService */,
 				ED8B66952206DE3B00CAE528 /* Transaction */,
 				ED8B668C2206CE2C00CAE528 /* Launcher */,
 				ED8B668B2206CE2500CAE528 /* Navigation */,
@@ -367,6 +523,7 @@
 			children = (
 				EDFE497F22060400005FD029 /* ConfigurableController.swift */,
 				EDFE4985220605C7005FD029 /* StoryboardIdentifierProtocol.swift */,
+				ED8B669E2207243000CAE528 /* RefreshableView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -379,6 +536,7 @@
 				ED8B666B2206091300CAE528 /* UIViewController+Extensions.swift */,
 				ED8B66902206D18500CAE528 /* UINavigationController+Extensions.swift */,
 				ED8B669C2206E83900CAE528 /* UITableView+Extensions.swift */,
+				ED8B66A722073E8700CAE528 /* UISegmentedControl.swift */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -388,6 +546,7 @@
 			children = (
 				EDFE497A22060305005FD029 /* String+Extensions.swift */,
 				ED8B669A2206E3DB00CAE528 /* Date+Extensions.swift */,
+				ED8B66A522073AA200CAE528 /* Double+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -399,6 +558,15 @@
 				703820AA48BFBC3952BAF27F /* Tabbar.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FB630021E1D4CD705E0646A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58720DCE644EA0A1BB3F3C8D /* PricesViewModel.swift */,
+			);
+			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +637,9 @@
 				459F3A38ADAC14D4BC878D3F /* Tabbar.storyboard in Resources */,
 				309E89505FFEB81882EC79DC /* Transactions.storyboard in Resources */,
 				A96A36F5581EBB922525A501 /* TransactionCell.xib in Resources */,
+				DB0C92C46616A6CDB855FFE0 /* Transaction.storyboard in Resources */,
+				D38F405052A019E04961315C /* Converter.storyboard in Resources */,
+				D45AFF9BC8E203CDF27294D7 /* Prices.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFE496322059135005FD029 /* AppDelegate.swift in Sources */,
+				ED8B66A422072D4B00CAE528 /* BitcoinPrice.swift in Sources */,
 				EDFE4976220601E7005FD029 /* NavigationService.swift in Sources */,
 				ED8B6678220611FB00CAE528 /* Rx+Alamofire.swift in Sources */,
 				ED8B668E2206CE3700CAE528 /* Launcher.swift in Sources */,
@@ -559,8 +731,10 @@
 				EDFE498022060400005FD029 /* ConfigurableController.swift in Sources */,
 				ED8B66942206DDA700CAE528 /* TransactionRouter.swift in Sources */,
 				ED8B66752206116900CAE528 /* NetworkError.swift in Sources */,
+				ED8B66A222072D1600CAE528 /* BitcoinService.swift in Sources */,
 				ED8B66802206190400CAE528 /* BaseRouter.swift in Sources */,
 				EDFE497B22060305005FD029 /* String+Extensions.swift in Sources */,
+				ED8B669F2207243000CAE528 /* RefreshableView.swift in Sources */,
 				4AD3466AEC8298535FAB608B /* TabbarViewController.swift in Sources */,
 				ED8B66992206DE8D00CAE528 /* Transaction.swift in Sources */,
 				9D0F5E562B214852CA8E54E8 /* TabbarViewModel.swift in Sources */,
@@ -570,6 +744,8 @@
 				ED8B669B2206E3DB00CAE528 /* Date+Extensions.swift in Sources */,
 				ED8B6670220610E000CAE528 /* Transport.swift in Sources */,
 				ED8B66822206196300CAE528 /* BitcoinRouter.swift in Sources */,
+				ED8B66A822073E8700CAE528 /* UISegmentedControl.swift in Sources */,
+				ED8B66A622073AA200CAE528 /* Double+Extensions.swift in Sources */,
 				E57A65E01C28CAD1DDADDE9D /* TransactionsAssembly.swift in Sources */,
 				7A64CA028AE2C38B8B6DB85F /* NavigationService+Transactions.swift in Sources */,
 				F96E9973D82C09F7473AF89E /* TransactionsViewController.swift in Sources */,
@@ -577,6 +753,18 @@
 				4EA5055E8BEDD3EE0B915EF5 /* TransactionsViewModel.swift in Sources */,
 				F8D302E46B18F0170BCA370F /* TransactionCell.swift in Sources */,
 				D7D9C718F37EDDBAD502AC96 /* TransactionCellViewModel.swift in Sources */,
+				7EED7B7C3D41D93BFC87147D /* TransactionAssembly.swift in Sources */,
+				4C38A0C61996634EF00BC300 /* NavigationService+Transaction.swift in Sources */,
+				9D95E865DE9C492386714BCA /* TransactionViewController.swift in Sources */,
+				B226DDD66972FD8FDF38A92C /* TransactionViewModel.swift in Sources */,
+				2A6299CCE657C36125FE6F68 /* ConverterAssembly.swift in Sources */,
+				79AE8E87BF5497E15DD00266 /* NavigationService+Converter.swift in Sources */,
+				8DFA1D50C48E46DC9ED66790 /* ConverterViewController.swift in Sources */,
+				4136264957BE7149AA1CFE9A /* ConverterViewModel.swift in Sources */,
+				8652CCE088F1D1E856600701 /* PricesAssembly.swift in Sources */,
+				80EC0A49116169DA2CA045C2 /* NavigationService+Prices.swift in Sources */,
+				751EB2B115A6F9E5E5C93F20 /* PricesViewController.swift in Sources */,
+				CB26946AB2809696760604C5 /* PricesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

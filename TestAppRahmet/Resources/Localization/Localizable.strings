@@ -3,3 +3,12 @@
 "prices" = "Цены";
 "transactions" = "Транзакции";
 "converter" = "Допик";
+
+//Navigation item
+"about_transaction" = "О транзакции";
+
+
+//Common
+
+"ok_title" = "Ок";
+

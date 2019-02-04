@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter View Controller-->
+        <scene sceneID="uwV-8F-5ow">
+            <objects>
+                <viewController storyboardIdentifier="ConverterViewController" id="b6t-bz-ieq" customClass="ConverterViewController" customModule="TestAppRahmet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arn-yg-C6P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJX-vQ-XbK">
+                                <rect key="frame" x="52.5" y="44" width="270" height="30"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q8e-Qu-EFn">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="31"/>
+                                        <segments>
+                                            <segment title="USD"/>
+                                            <segment title="EUR"/>
+                                            <segment title="KZT"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="valueChanged:" destination="b6t-bz-ieq" eventType="valueChanged" id="6ru-Lb-39N"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="q8e-Qu-EFn" secondAttribute="bottom" id="1MQ-og-rxc"/>
+                                    <constraint firstAttribute="width" constant="270" id="9qf-Rz-Vkj"/>
+                                    <constraint firstItem="q8e-Qu-EFn" firstAttribute="top" secondItem="WJX-vQ-XbK" secondAttribute="top" id="H7Z-vI-WYt"/>
+                                    <constraint firstItem="q8e-Qu-EFn" firstAttribute="leading" secondItem="WJX-vQ-XbK" secondAttribute="leading" id="LHF-cJ-J1d"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8e-Qu-EFn" secondAttribute="trailing" id="R7r-FJ-pug"/>
+                                    <constraint firstAttribute="height" constant="30" id="bhu-J7-rH9"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите сумму" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-45-H5a">
+                                <rect key="frame" x="52.5" y="122" width="270" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="8oq-4n-1Ok"/>
+                                    <constraint firstAttribute="height" constant="40" id="t06-79-bAY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Количество " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IC-q2-ldP">
+                                <rect key="frame" x="52.5" y="180" width="270" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="B6p-dk-ldi"/>
+                                    <constraint firstAttribute="height" constant="40" id="yXu-6C-3W8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7df-pP-Xqk">
+                                <rect key="frame" x="0.0" y="170" width="375" height="2"/>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Vdj-4i-KqY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p14-vb-Wm6">
+                                <rect key="frame" x="325" y="156" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JUe-RC-GBk"/>
+                                    <constraint firstAttribute="width" constant="30" id="wGp-MJ-HTB"/>
+                                </constraints>
+                                <state key="normal" image="converter_change"/>
+                                <connections>
+                                    <action selector="swapTextFields:" destination="b6t-bz-ieq" eventType="touchUpInside" id="2TL-Yc-Ywd"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-EC-JK4">
+                                <rect key="frame" x="177.5" y="244" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6du-Lb-dtI" firstAttribute="trailing" secondItem="p14-vb-Wm6" secondAttribute="trailing" constant="20" id="1og-og-bAY"/>
+                            <constraint firstItem="7df-pP-Xqk" firstAttribute="top" secondItem="wKO-45-H5a" secondAttribute="bottom" constant="8" id="3In-hl-kAE"/>
+                            <constraint firstItem="WJX-vQ-XbK" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="7K4-KW-Zoh"/>
+                            <constraint firstItem="wKO-45-H5a" firstAttribute="top" secondItem="WJX-vQ-XbK" secondAttribute="bottom" constant="48" id="9UU-Hf-IBU"/>
+                            <constraint firstItem="ChM-EC-JK4" firstAttribute="top" secondItem="5IC-q2-ldP" secondAttribute="bottom" constant="24" id="BFC-Vf-lLh"/>
+                            <constraint firstAttribute="trailing" secondItem="7df-pP-Xqk" secondAttribute="trailing" id="FY9-NY-DNf"/>
+                            <constraint firstItem="WJX-vQ-XbK" firstAttribute="top" secondItem="6du-Lb-dtI" secondAttribute="top" constant="24" id="ecu-wU-EQP"/>
+                            <constraint firstItem="5IC-q2-ldP" firstAttribute="top" secondItem="7df-pP-Xqk" secondAttribute="bottom" constant="8" id="kuc-P1-UaQ"/>
+                            <constraint firstItem="7df-pP-Xqk" firstAttribute="leading" secondItem="arn-yg-C6P" secondAttribute="leading" id="mmi-Gs-Nqu"/>
+                            <constraint firstItem="p14-vb-Wm6" firstAttribute="centerY" secondItem="7df-pP-Xqk" secondAttribute="centerY" id="vlJ-I9-SVb"/>
+                            <constraint firstItem="wKO-45-H5a" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="wRx-zk-IPV"/>
+                            <constraint firstItem="ChM-EC-JK4" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="yHE-Pn-VOG"/>
+                            <constraint firstItem="5IC-q2-ldP" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="zCu-YI-4sS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6du-Lb-dtI"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gns-hp-qcz" appends="YES" id="oNQ-7z-RmV"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="activeTextField" destination="wKO-45-H5a" id="9P1-Gz-5dY"/>
+                        <outlet property="activityIndicator" destination="ChM-EC-JK4" id="EsW-WO-dGf"/>
+                        <outlet property="disabledTextField" destination="5IC-q2-ldP" id="hUD-dD-dt2"/>
+                        <outlet property="segmentedControl" destination="q8e-Qu-EFn" id="9yV-Pm-90m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dml-eC-9W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gns-hp-qcz">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="b6t-bz-ieq" id="zjM-rB-u3l"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-450.39999999999998" y="-152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="converter_change" width="30" height="30"/>
+    </resources>
+</document>

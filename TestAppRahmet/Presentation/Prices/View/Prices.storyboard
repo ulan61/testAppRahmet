@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prices View Controller-->
+        <scene sceneID="uwV-8F-5ow">
+            <objects>
+                <viewController storyboardIdentifier="PricesViewController" id="b6t-bz-ieq" customClass="PricesViewController" customModule="TestAppRahmet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arn-yg-C6P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icO-wP-9Km" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="211.5" width="359" height="447.5"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lzd-nd-h3j">
+                                        <rect key="frame" x="169.5" y="214" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lzd-nd-h3j" firstAttribute="centerX" secondItem="icO-wP-9Km" secondAttribute="centerX" id="7GA-zl-sau"/>
+                                    <constraint firstItem="lzd-nd-h3j" firstAttribute="centerY" secondItem="icO-wP-9Km" secondAttribute="centerY" id="dSv-F0-Wgq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9d-BG-Wcr">
+                                <rect key="frame" x="52.5" y="44" width="270" height="30"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5mb-iy-ITo">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="31"/>
+                                        <segments>
+                                            <segment title="USD"/>
+                                            <segment title="EUR"/>
+                                            <segment title="KZT"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="valueChanged:" destination="b6t-bz-ieq" eventType="valueChanged" id="NhZ-8m-MKI"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="MMg-kI-pDp"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mb-iy-ITo" secondAttribute="trailing" id="QbZ-aA-IeW"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qey-zD-CLE"/>
+                                    <constraint firstItem="5mb-iy-ITo" firstAttribute="top" secondItem="r9d-BG-Wcr" secondAttribute="top" id="bPf-sR-dut"/>
+                                    <constraint firstItem="5mb-iy-ITo" firstAttribute="leading" secondItem="r9d-BG-Wcr" secondAttribute="leading" id="dcW-3O-Hzf"/>
+                                    <constraint firstAttribute="bottom" secondItem="5mb-iy-ITo" secondAttribute="bottom" id="opi-FR-Ka2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-em-UXZ">
+                                <rect key="frame" x="180" y="86" width="15" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.1529411765" green="0.17254901959999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курс биткоина" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDR-Eb-iMd">
+                                <rect key="frame" x="144" y="119" width="87" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-6A-Ijj">
+                                <rect key="frame" x="52.5" y="145.5" width="270" height="30"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FK1-DK-UQ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="31"/>
+                                        <segments>
+                                            <segment title="Неделя"/>
+                                            <segment title="Месяц"/>
+                                            <segment title="Год"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="periodValueChanged:" destination="b6t-bz-ieq" eventType="valueChanged" id="gju-Yn-5pq"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FK1-DK-UQ1" secondAttribute="trailing" id="CI1-TE-RHW"/>
+                                    <constraint firstAttribute="height" constant="30" id="EI3-xR-fcZ"/>
+                                    <constraint firstItem="FK1-DK-UQ1" firstAttribute="top" secondItem="7dd-6A-Ijj" secondAttribute="top" id="LDE-ey-oU1"/>
+                                    <constraint firstItem="FK1-DK-UQ1" firstAttribute="leading" secondItem="7dd-6A-Ijj" secondAttribute="leading" id="RR1-uS-QzY"/>
+                                    <constraint firstAttribute="bottom" secondItem="FK1-DK-UQ1" secondAttribute="bottom" id="n7M-o2-xOY"/>
+                                    <constraint firstAttribute="width" constant="270" id="zDg-r3-SaK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FSb-em-UXZ" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="0eF-oR-dYn"/>
+                            <constraint firstItem="6du-Lb-dtI" firstAttribute="bottom" secondItem="icO-wP-9Km" secondAttribute="bottom" constant="8" id="3NB-Fi-RWD"/>
+                            <constraint firstItem="7dd-6A-Ijj" firstAttribute="top" secondItem="FDR-Eb-iMd" secondAttribute="bottom" constant="12" id="47V-x9-2wN"/>
+                            <constraint firstItem="6du-Lb-dtI" firstAttribute="trailing" secondItem="icO-wP-9Km" secondAttribute="trailing" constant="8" id="QfX-KV-zfb"/>
+                            <constraint firstItem="r9d-BG-Wcr" firstAttribute="top" secondItem="6du-Lb-dtI" secondAttribute="top" constant="24" id="TI1-p6-68o"/>
+                            <constraint firstItem="FSb-em-UXZ" firstAttribute="top" secondItem="r9d-BG-Wcr" secondAttribute="bottom" constant="12" id="UP1-WN-qdB"/>
+                            <constraint firstItem="icO-wP-9Km" firstAttribute="top" secondItem="7dd-6A-Ijj" secondAttribute="bottom" constant="36" id="WVh-eP-EE8"/>
+                            <constraint firstItem="FDR-Eb-iMd" firstAttribute="top" secondItem="FSb-em-UXZ" secondAttribute="bottom" constant="4" id="Y3o-iv-Ocm"/>
+                            <constraint firstItem="r9d-BG-Wcr" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="Yph-g9-NLh"/>
+                            <constraint firstItem="FDR-Eb-iMd" firstAttribute="centerX" secondItem="FSb-em-UXZ" secondAttribute="centerX" id="ZdN-xf-fx8"/>
+                            <constraint firstItem="7dd-6A-Ijj" firstAttribute="centerX" secondItem="6du-Lb-dtI" secondAttribute="centerX" id="aw5-OL-dxf"/>
+                            <constraint firstItem="icO-wP-9Km" firstAttribute="leading" secondItem="6du-Lb-dtI" secondAttribute="leading" constant="8" id="cEY-zc-eMK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6du-Lb-dtI"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="lzd-nd-h3j" id="qhd-As-H9p"/>
+                        <outlet property="lineChartView" destination="icO-wP-9Km" id="h1n-yl-KMY"/>
+                        <outlet property="periodSegmentedControl" destination="FK1-DK-UQ1" id="6ES-Wb-vdv"/>
+                        <outlet property="rateLabel" destination="FSb-em-UXZ" id="Ntx-5f-nzp"/>
+                        <outlet property="segmentedControl" destination="5mb-iy-ITo" id="5rA-5T-FBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dml-eC-9W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="-150"/>
+        </scene>
+    </scenes>
+</document>

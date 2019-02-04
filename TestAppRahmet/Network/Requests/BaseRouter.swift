@@ -1,6 +1,6 @@
 import Alamofire
 
-let bitcoinUrl = "https://api.coindesk.com/v1/bpi/historical/close.json"
+let bitcoinUrl = "https://api.coindesk.com"
 let transactionsUrl = "https://www.bitstamp.net"
 
 protocol BaseRouter: URLRequestConvertible {
